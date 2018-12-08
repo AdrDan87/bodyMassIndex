@@ -1,4 +1,4 @@
-public interface Calculator {
+public interface BodyCalculator {
     String calculate();
     String interpret();
 
