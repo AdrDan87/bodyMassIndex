@@ -1,7 +1,5 @@
 import java.util.Arrays;
 
-import static java.lang.Math.abs;
-
 public class BMIndex implements BodyCalculator {
 private double height;
 private double mass;
@@ -35,7 +33,7 @@ private double mass;
                 "super obese",
                 "hyper obese"};
         double bmi = Double.parseDouble(calculate().replaceAll(",","\\."));
-        int index = abs(-1 * (Arrays.binarySearch(breakPointValues,bmi) +1));
+        int index = (-1 * (Arrays.binarySearch(breakPointValues,bmi) +1));
         return category[index];
     }
 }
