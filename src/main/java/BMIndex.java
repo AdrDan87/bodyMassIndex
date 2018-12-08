@@ -33,7 +33,7 @@ private double mass;
                 "super obese",
                 "hyper obese"};
         double bmi = Double.parseDouble(calculate().replaceAll(",","\\."));
-        int index = (-1 * (Arrays.binarySearch(breakPointValues,bmi) +1));
+        int index = -1 * (Arrays.binarySearch(breakPointValues,bmi) +1);
         return category[index];
     }
 }
