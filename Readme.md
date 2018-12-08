@@ -1,0 +1,1 @@
+Project for calculating Body Mass Index and interpreting the result.
